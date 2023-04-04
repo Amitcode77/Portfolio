@@ -1,0 +1,19 @@
+<section class="projects" id="projects">
+    <div class="max-width">
+        <h2 class="title">My Projects</h2>
+        
+        <div class="carousel owl-carousel" *ngFor="let project of projects">
+
+            <a [href]="project.pLink" target="_blank">
+                <div class="card">
+                    <div class="box">
+                        <img [src]="project.pImage" alt="">
+                        <div class="text">{{project.pName}}</div>
+                        <p>{{project.pDesc}}</p>
+                    </div>
+                </div>
+            </a>
+             
+        </div>
+    </div>
+</section>
